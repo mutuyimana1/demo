@@ -5,7 +5,7 @@ import "./index.css"
 const Footer = () => {
   return (
     <div>
-      <div className='footerContainer'>
+      <div className='footerContainer' id='contact'>
  <div className='footer-content'>
     <div>
         <h3>Subscribe to our weekly newsletter </h3>

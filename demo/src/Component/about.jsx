@@ -11,8 +11,8 @@ import imgCard3 from "../assets/images/Rectangle 8.png"
 const About = () => {
   return (
     <>
-    <div className='about-container'>
-        <div className='about-vector'>
+    <div className='about-container' id='about'>
+        <div className='about-vector1'>
             
         </div>
         <div className='about-content'> 
@@ -22,7 +22,7 @@ const About = () => {
         </div>
       
     </div>
-    <div className='value-section'>
+    <div className='value-section' id='about'>
         {visions.map((vision)=>(
   <div className='mission'>
   <h2>{vision.h2}</h2>
@@ -32,7 +32,7 @@ const About = () => {
 </div>
         ))}
   </div>
-  <div className='bland'>
+  <div className='bland' id='gallery'>
     <div style={{width:"30%"}}>
   <h2>Tellus erat aliquam blandit etiam</h2>
         <div className='like-line'></div>
@@ -44,7 +44,7 @@ const About = () => {
         </div>
         
   </div>
-  <div className='partners-section'>
+  <div className='partners-section' id='blog'>
   <div className='about-vector'>
             
             </div>
@@ -55,14 +55,14 @@ const About = () => {
 </div>
 <div>
 <h2>Lorem ipsum dolor sit consectetur.</h2> <p>Mauris suscipit faucibus felis risus lectus platea neque ut. Odio adipiscing tincidunt velit egestas convallis placerat vestibulum. </p>
-<button className='btn-own' style={{background:"transparent", border:" 1px solid white"}}>lorem ipsm</button>
+<button className='btn-own' style={{background:"transparent", border:" 1px solid white", color:"white"}}>lorem ipsm</button>
 </div>
             </div>
-            <div className='about-vector'>
+            <div className='about-vector2'>
             
             </div>
   </div>
-  <div className='story-section'>
+  <div className='story-section' id='blog'>
     <div style={{width:"30%"}}>
   <h2>Latest stories and Updates</h2>
         <div className='like-line'></div>
