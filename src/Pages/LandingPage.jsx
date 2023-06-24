@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '../Component/Header'
-import About from '../Component/about'
+import Header from '../Component/header'
+import About from './about'
 import Footer from '../Component/footer'
 const LandingPage = () => {
   return (

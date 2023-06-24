@@ -22,9 +22,9 @@ const Footer = () => {
         <h3>Be social</h3>
         
           <a href=""> <BsFacebook className='footerIcon'/> faceBook</a>   <br />
-          <a href=""> <BsFacebook className='footerIcon'/> Twitter</a>  <br />
-          <a href="">  <BsFacebook className='footerIcon'/> LinkedIn</a>   <br />
-          <a href="">  <BsFacebook className='footerIcon'/> You tube channel</a>  
+          <a href=""> <FaTwitter className='footerIcon'/> Twitter</a>  <br />
+          <a href="">  <FaLinkedinIn className='footerIcon'/> LinkedIn</a>   <br />
+          <a href="">  <FaYoutube className='footerIcon'/> You tube channel</a>  
         
     </div>
     <div className='footer-item'>

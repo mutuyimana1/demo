@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {visions }from "../constant/value"
-import Button from './button'
+import Button from '../Component/button'
 import {AiFillPlusCircle} from "react-icons/ai"
 import imgTwo from "../assets/images/BANNER 02.png"
 import imgOne from "../assets/images/BANNER 04.png"
@@ -8,7 +8,21 @@ import imgThree from "../assets/images/BANNER.png"
 import imgCar1 from "../assets/images/Rectangle 8 (1).png"
 import imgCard2 from "../assets/images/Rectangle 8 (2).png"
 import imgCard3 from "../assets/images/Rectangle 8.png"
+
 const About = () => {
+  const [company, setCompany] =useState([])
+  useEffect (()=>{
+    const fetchData=async () =>{
+      try{
+        const response=await fetch('https://mutuyimana1-vigilant-tribble-vrw4gj45wv5fvj4-8000.preview.app.github.dev/company/');
+        const data =await response.json();
+        setCompany(data);
+      } catch (error){
+        console.error('Error:', error);}
+    };
+
+    fetchData();
+  },[]);
   return (
     <>
     <div className='about-container' id='about'>
@@ -23,14 +37,26 @@ const About = () => {
       
     </div>
     <div className='value-section' id='about'>
-        {visions.map((vision)=>(
+        
   <div className='mission'>
-  <h2>{vision.h2}</h2>
+  <h2>Mission</h2>
   <div className='like-line'></div>
-  <p>{vision.p}</p>
+  <p>{company.mission}</p>
 
 </div>
-        ))}
+       <div className='mission'>
+  <h2>Vission</h2>
+  <div className='like-line'></div>
+  <p>{company.vision}</p>
+
+</div>
+       <div className='mission'>
+  <h2>Objectives</h2>
+  <div className='like-line'></div>
+  <p>{company.objectives}</p>
+
+</div>
+     
   </div>
   <div className='bland' id='gallery'>
     <div style={{width:"30%"}}>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import LandingPage from "../Pages/LandingPage";
+import LandingPage from "../Pages/landingPage";
 const Index = () => {
   return (
     <div>
